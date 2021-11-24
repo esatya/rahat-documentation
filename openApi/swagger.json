@@ -25,33 +25,35 @@
       "name": "Auth"
     },
     {
-      "name": "agency"
+      "name": "Agency"
     },
     {
-      "name": "app"
+      "name": "App"
     },
     {
-      "name": "beneficiaries"
+      "name": "Beneficiaries"
     },
     {
-      "name": "institutions"
+      "name": "Institutions"
     },
     {
-      "name": "mobilizers"
+      "name": "Mobilizers"
     },
     {
-      "name": "projects"
+      "name": "Projects"
     },
     {
-      "name": "roles"
+      "name": "Roles"
     },
     {
-      "name": "transactions"
+      "name": "Transactions"
     },
     {
-      "name": "users"
+      "name": "Users"
     },
-    { "name": "vendors" }
+    {
+      "name": "Vendors"
+    }
   ],
   "paths": {
     "/api/v1/auth": {
@@ -86,7 +88,7 @@
       "get": {
         "summary": "List all beneficiarys.",
         "operationId": "getApiV1Beneficiaries",
-        "tags": ["beneficiaries"],
+        "tags": ["Beneficiaries"],
         "responses": {
           "default": {
             "schema": {
@@ -108,7 +110,7 @@
             }
           }
         ],
-        "tags": ["beneficiaries"],
+        "tags": ["Beneficiaries"],
         "responses": {
           "default": {
             "schema": {
@@ -123,7 +125,7 @@
       "get": {
         "summary": "List all the financial institutions",
         "operationId": "getApiV1Institutions",
-        "tags": ["institutions"],
+        "tags": ["Institutions"],
         "responses": {
           "default": {
             "schema": {
@@ -145,7 +147,7 @@
             }
           }
         ],
-        "tags": ["institutions"],
+        "tags": ["Institutions"],
         "responses": {
           "default": {
             "schema": {
@@ -192,7 +194,7 @@
             "in": "query"
           }
         ],
-        "tags": ["mobilizers"],
+        "tags": ["Mobilizers"],
         "responses": {
           "default": {
             "schema": {
@@ -214,7 +216,7 @@
             }
           }
         ],
-        "tags": ["mobilizers"],
+        "tags": ["Mobilizers"],
         "responses": {
           "default": {
             "schema": {
@@ -251,7 +253,7 @@
             "in": "query"
           }
         ],
-        "tags": ["projects"],
+        "tags": ["Projects"],
         "responses": {
           "default": {
             "schema": {
@@ -309,7 +311,7 @@
           }
         ],
         "consumes": ["multipart/form-data"],
-        "tags": ["projects"],
+        "tags": ["Projects"],
         "responses": {
           "default": {
             "schema": {
@@ -324,7 +326,7 @@
       "get": {
         "summary": "Get all the roles",
         "operationId": "getApiV1Roles",
-        "tags": ["roles"],
+        "tags": ["Roles"],
         "responses": {
           "default": {
             "schema": {
@@ -337,7 +339,7 @@
       "put": {
         "summary": "Add a new role",
         "operationId": "putApiV1Roles",
-        "tags": ["roles"],
+        "tags": ["Roles"],
         "responses": {
           "default": {
             "schema": {
@@ -369,7 +371,7 @@
             "in": "query"
           }
         ],
-        "tags": ["users"],
+        "tags": ["Users"],
         "responses": {
           "default": {
             "schema": {
@@ -391,7 +393,7 @@
             }
           }
         ],
-        "tags": ["users"],
+        "tags": ["Users"],
         "responses": {
           "default": {
             "schema": {
@@ -443,7 +445,7 @@
             "in": "query"
           }
         ],
-        "tags": ["vendors"],
+        "tags": ["Vendors"],
         "responses": {
           "default": {
             "schema": {
@@ -465,7 +467,7 @@
             }
           }
         ],
-        "tags": ["vendors"],
+        "tags": ["Vendors"],
         "responses": {
           "default": {
             "schema": {
@@ -489,7 +491,7 @@
             "required": true
           }
         ],
-        "tags": ["agency"],
+        "tags": ["Agency"],
         "responses": {
           "default": {
             "schema": {
@@ -518,7 +520,7 @@
             }
           }
         ],
-        "tags": ["agency"],
+        "tags": ["Agency"],
         "responses": {
           "default": {
             "schema": {
@@ -533,7 +535,7 @@
       "get": {
         "summary": "Get the dashboard informations",
         "operationId": "getApiV1AppDashboards",
-        "tags": ["app"],
+        "tags": ["App"],
         "responses": {
           "default": {
             "schema": {
@@ -548,7 +550,7 @@
       "get": {
         "summary": "List all the application settings",
         "operationId": "getApiV1AppSettings",
-        "tags": ["app"],
+        "tags": ["App"],
         "responses": {
           "default": {
             "schema": {
@@ -572,7 +574,7 @@
             "required": true
           }
         ],
-        "tags": ["beneficiaries"],
+        "tags": ["Beneficiaries"],
         "responses": {
           "default": {
             "schema": {
@@ -594,7 +596,7 @@
             "required": true
           }
         ],
-        "tags": ["beneficiaries"],
+        "tags": ["Beneficiaries"],
         "responses": {
           "default": {
             "schema": {
@@ -623,7 +625,7 @@
             }
           }
         ],
-        "tags": ["beneficiaries"],
+        "tags": ["Beneficiaries"],
         "responses": {
           "default": {
             "schema": {
@@ -647,7 +649,7 @@
             "required": true
           }
         ],
-        "tags": ["institutions"],
+        "tags": ["Institutions"],
         "responses": {
           "default": {
             "schema": {
@@ -669,7 +671,7 @@
             "required": true
           }
         ],
-        "tags": ["institutions"],
+        "tags": ["Institutions"],
         "responses": {
           "default": {
             "schema": {
@@ -698,7 +700,7 @@
             }
           }
         ],
-        "tags": ["institutions"],
+        "tags": ["Institutions"],
         "responses": {
           "default": {
             "schema": {
@@ -721,7 +723,7 @@
             "required": true
           }
         ],
-        "tags": ["mobilizers"],
+        "tags": ["Mobilizers"],
         "responses": {
           "default": {
             "schema": {
@@ -743,7 +745,7 @@
             "required": true
           }
         ],
-        "tags": ["mobilizers"],
+        "tags": ["Mobilizers"],
         "responses": {
           "default": {
             "schema": {
@@ -772,7 +774,7 @@
             }
           }
         ],
-        "tags": ["mobilizers"],
+        "tags": ["Mobilizers"],
         "responses": {
           "default": {
             "schema": {
@@ -796,7 +798,7 @@
             "required": true
           }
         ],
-        "tags": ["projects"],
+        "tags": ["Projects"],
         "responses": {
           "default": {
             "schema": {
@@ -818,7 +820,7 @@
             "required": true
           }
         ],
-        "tags": ["projects"],
+        "tags": ["Projects"],
         "responses": {
           "default": {
             "schema": {
@@ -847,7 +849,7 @@
             }
           }
         ],
-        "tags": ["projects"],
+        "tags": ["Projects"],
         "responses": {
           "default": {
             "schema": {
@@ -870,7 +872,7 @@
             "required": true
           }
         ],
-        "tags": ["roles"],
+        "tags": ["Roles"],
         "responses": {
           "default": {
             "schema": {
@@ -883,7 +885,7 @@
       "delete": {
         "summary": "Delete a role by id",
         "operationId": "deleteApiV1RolesId",
-        "tags": ["roles"],
+        "tags": ["Roles"],
         "responses": {
           "default": {
             "schema": {
@@ -898,7 +900,7 @@
       "get": {
         "summary": "Get a new transaction to sign",
         "operationId": "getApiV1TransactionsTosign",
-        "tags": ["transactions"],
+        "tags": ["Transactions"],
         "responses": {
           "default": {
             "schema": {
@@ -921,7 +923,7 @@
             "required": true
           }
         ],
-        "tags": ["transactions"],
+        "tags": ["Transactions"],
         "responses": {
           "default": {
             "schema": {
@@ -936,7 +938,7 @@
       "get": {
         "summary": "Login using username and password",
         "operationId": "getApiV1UsersLogin",
-        "tags": ["users"],
+        "tags": ["Users"],
         "responses": {
           "default": {
             "schema": {
@@ -960,7 +962,7 @@
             "required": true
           }
         ],
-        "tags": ["users"],
+        "tags": ["Users"],
         "responses": {
           "default": {
             "schema": {
@@ -989,7 +991,7 @@
             }
           }
         ],
-        "tags": ["users"],
+        "tags": ["Users"],
         "responses": {
           "default": {
             "schema": {
@@ -1012,7 +1014,7 @@
             "required": true
           }
         ],
-        "tags": ["vendors"],
+        "tags": ["Vendors"],
         "responses": {
           "default": {
             "schema": {
@@ -1034,7 +1036,7 @@
             "required": true
           }
         ],
-        "tags": ["vendors"],
+        "tags": ["Vendors"],
         "responses": {
           "default": {
             "schema": {
@@ -1063,7 +1065,7 @@
             }
           }
         ],
-        "tags": ["vendors"],
+        "tags": ["Vendors"],
         "responses": {
           "default": {
             "schema": {
@@ -1086,7 +1088,7 @@
             "required": true
           }
         ],
-        "tags": ["app"],
+        "tags": ["App"],
         "responses": {
           "default": {
             "schema": {
@@ -1101,7 +1103,7 @@
       "get": {
         "summary": "setup a contracts and deploy to blockchain",
         "operationId": "getApiV1AppSetupContracts",
-        "tags": ["app"],
+        "tags": ["App"],
         "responses": {
           "default": {
             "schema": {
@@ -1116,7 +1118,7 @@
       "get": {
         "summary": "Setup a new server wallet",
         "operationId": "getApiV1AppSetupWallet",
-        "tags": ["app"],
+        "tags": ["App"],
         "responses": {
           "default": {
             "schema": {
@@ -1140,7 +1142,7 @@
             "required": true
           }
         ],
-        "tags": ["beneficiaries"],
+        "tags": ["Beneficiaries"],
         "responses": {
           "default": {
             "schema": {
@@ -1169,7 +1171,7 @@
             }
           }
         ],
-        "tags": ["beneficiaries"],
+        "tags": ["Beneficiaries"],
         "responses": {
           "default": {
             "schema": {
@@ -1192,7 +1194,7 @@
             "required": true
           }
         ],
-        "tags": ["mobilizers"],
+        "tags": ["Mobilizers"],
         "responses": {
           "default": {
             "schema": {
@@ -1207,7 +1209,7 @@
       "get": {
         "summary": "List vendors registered to the project",
         "operationId": "getApiV1ProjectsIdVendors",
-        "tags": ["projects"],
+        "tags": ["Projects"],
         "responses": {
           "default": {
             "schema": {
@@ -1231,7 +1233,7 @@
             "required": true
           }
         ],
-        "tags": ["projects"],
+        "tags": ["Projects"],
         "responses": {
           "default": {
             "schema": {
@@ -1260,7 +1262,7 @@
             }
           }
         ],
-        "tags": ["projects"],
+        "tags": ["Projects"],
         "responses": {
           "default": {
             "schema": {
@@ -1275,7 +1277,7 @@
       "get": {
         "summary": "Get permissions list by role",
         "operationId": "getApiV1RolesNamePermissions",
-        "tags": ["roles"],
+        "tags": ["Roles"],
         "responses": {
           "default": {
             "schema": {
@@ -1290,7 +1292,7 @@
       "get": {
         "summary": "List by role",
         "operationId": "getApiV1UsersRolesRole",
-        "tags": ["users"],
+        "tags": ["Users"],
         "responses": {
           "default": {
             "schema": {
@@ -1313,7 +1315,7 @@
             "required": true
           }
         ],
-        "tags": ["vendors"],
+        "tags": ["Vendors"],
         "responses": {
           "default": {
             "schema": {
@@ -1336,7 +1338,7 @@
             "required": true
           }
         ],
-        "tags": ["app"],
+        "tags": ["App"],
         "responses": {
           "default": {
             "schema": {
@@ -1360,7 +1362,7 @@
             }
           }
         ],
-        "tags": ["transactions"],
+        "tags": ["Transactions"],
         "responses": {
           "default": {
             "schema": {
@@ -1384,7 +1386,7 @@
             }
           }
         ],
-        "tags": ["app"],
+        "tags": ["App"],
         "responses": {
           "default": {
             "schema": {
@@ -1423,7 +1425,7 @@
             }
           }
         ],
-        "tags": ["mobilizers"],
+        "tags": ["Mobilizers"],
         "responses": {
           "default": {
             "schema": {
@@ -1438,7 +1440,7 @@
       "post": {
         "summary": "sends signed Transaction",
         "operationId": "postApiV1TransactionsSigned",
-        "tags": ["transactions"],
+        "tags": ["Transactions"],
         "responses": {
           "default": {
             "schema": {
@@ -1462,7 +1464,7 @@
             }
           }
         ],
-        "tags": ["users"],
+        "tags": ["Users"],
         "responses": {
           "default": {
             "schema": {
@@ -1486,7 +1488,7 @@
             }
           }
         ],
-        "tags": ["users"],
+        "tags": ["Users"],
         "responses": {
           "default": {
             "schema": {
@@ -1510,7 +1512,7 @@
             }
           }
         ],
-        "tags": ["vendors"],
+        "tags": ["Vendors"],
         "responses": {
           "default": {
             "schema": {
@@ -1525,7 +1527,7 @@
       "post": {
         "summary": "Login using blockchain wallet",
         "operationId": "postApiV1UsersLoginWallet",
-        "tags": ["users"],
+        "tags": ["Users"],
         "responses": {
           "default": {
             "schema": {
@@ -1540,7 +1542,7 @@
       "delete": {
         "summary": "Remove permissions from a role",
         "operationId": "deleteApiV1RolesIdPermissions",
-        "tags": ["roles"],
+        "tags": ["Roles"],
         "responses": {
           "default": {
             "schema": {
@@ -1568,7 +1570,7 @@
             }
           }
         ],
-        "tags": ["roles"],
+        "tags": ["Roles"],
         "responses": {
           "default": {
             "schema": {
@@ -1583,7 +1585,7 @@
       "delete": {
         "summary": "Remove roles from user",
         "operationId": "deleteApiV1UsersIdRoles",
-        "tags": ["users"],
+        "tags": ["Users"],
         "responses": {
           "default": {
             "schema": {
@@ -1612,7 +1614,7 @@
             }
           }
         ],
-        "tags": ["users"],
+        "tags": ["Users"],
         "responses": {
           "default": {
             "schema": {
@@ -1636,7 +1638,7 @@
             }
           }
         ],
-        "tags": ["mobilizers"],
+        "tags": ["Mobilizers"],
         "responses": {
           "default": {
             "schema": {
@@ -1660,7 +1662,7 @@
             }
           }
         ],
-        "tags": ["vendors"],
+        "tags": ["Vendors"],
         "responses": {
           "default": {
             "schema": {
@@ -1691,7 +1693,7 @@
             }
           }
         ],
-        "tags": ["agency"],
+        "tags": ["Agency"],
         "responses": {
           "default": {
             "schema": {
@@ -1722,7 +1724,7 @@
             }
           }
         ],
-        "tags": ["institutions"],
+        "tags": ["Institutions"],
         "responses": {
           "default": {
             "schema": {
@@ -1752,7 +1754,7 @@
             }
           }
         ],
-        "tags": ["mobilizers"],
+        "tags": ["Mobilizers"],
         "responses": {
           "default": {
             "schema": {
@@ -1783,7 +1785,7 @@
             }
           }
         ],
-        "tags": ["projects"],
+        "tags": ["Projects"],
         "responses": {
           "default": {
             "schema": {
@@ -1814,7 +1816,7 @@
             }
           }
         ],
-        "tags": ["projects"],
+        "tags": ["Projects"],
         "responses": {
           "default": {
             "schema": {
@@ -1829,7 +1831,7 @@
       "patch": {
         "summary": "Make user active or inactive",
         "operationId": "patchApiV1UsersIdStatus",
-        "tags": ["users"],
+        "tags": ["Users"],
         "responses": {
           "default": {
             "schema": {
@@ -1859,7 +1861,7 @@
             }
           }
         ],
-        "tags": ["vendors"],
+        "tags": ["Vendors"],
         "responses": {
           "default": {
             "schema": {
