@@ -485,11 +485,13 @@
         "operationId": "getApiV1AgencyId",
         "parameters": [
           {
-            "type": "string",
-            "description": "Id of the agency",
             "name": "id",
             "in": "path",
-            "required": true
+            "description": "Id of the agency",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
