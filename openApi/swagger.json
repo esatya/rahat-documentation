@@ -1454,22 +1454,23 @@
         "tags": ["app"],
         "summary": "Setup a new server for the first time",
         "operationId": "postApiV1AppSetup",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/AppSetup"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/AppSetup" }
             }
           }
-        ],
+        },
         "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
-          }
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/AppSetup" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
