@@ -101,15 +101,7 @@
       "post": {
         "summary": "Add a beneficiary.",
         "operationId": "postApiV1Beneficiaries",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Beneficiary"
-            }
-          }
-        ],
+
         "tags": ["Beneficiaries"],
         "responses": {
           "default": {
@@ -138,15 +130,7 @@
       "post": {
         "summary": "Add a financial institutions",
         "operationId": "postApiV1Institutions",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Institution"
-            }
-          }
-        ],
+
         "tags": ["Institutions"],
         "responses": {
           "default": {
@@ -162,38 +146,7 @@
       "get": {
         "summary": "List all Mobilizers.",
         "operationId": "getApiV1Mobilizers",
-        "parameters": [
-          {
-            "type": "number",
-            "name": "start",
-            "in": "query"
-          },
-          {
-            "type": "number",
-            "name": "limit",
-            "in": "query"
-          },
-          {
-            "type": "string",
-            "name": "name",
-            "in": "query"
-          },
-          {
-            "type": "string",
-            "name": "projectId",
-            "in": "query"
-          },
-          {
-            "type": "string",
-            "name": "status",
-            "in": "query"
-          },
-          {
-            "type": "boolean",
-            "name": "show_archive",
-            "in": "query"
-          }
-        ],
+
         "tags": ["Mobilizers"],
         "responses": {
           "default": {
@@ -207,15 +160,7 @@
       "post": {
         "summary": "Add a MOBILIZER.",
         "operationId": "postApiV1Mobilizers",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Mobilizer"
-            }
-          }
-        ],
+
         "tags": ["Mobilizers"],
         "responses": {
           "default": {
@@ -231,28 +176,7 @@
       "get": {
         "summary": "List all the agencies projects",
         "operationId": "getApiV1Projects",
-        "parameters": [
-          {
-            "type": "number",
-            "name": "start",
-            "in": "query"
-          },
-          {
-            "type": "number",
-            "name": "limit",
-            "in": "query"
-          },
-          {
-            "type": "string",
-            "name": "name",
-            "in": "query"
-          },
-          {
-            "type": "string",
-            "name": "status",
-            "in": "query"
-          }
-        ],
+
         "tags": ["Projects"],
         "responses": {
           "default": {
@@ -266,50 +190,7 @@
       "post": {
         "summary": "Add new project",
         "operationId": "postApiV1Projects",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Name of project",
-            "name": "name",
-            "in": "formData",
-            "required": true
-          },
-          {
-            "type": "string",
-            "name": "file",
-            "in": "formData"
-          },
-          {
-            "type": "string",
-            "format": "date",
-            "description": "End date of project",
-            "name": "end_date",
-            "in": "formData",
-            "required": false
-          },
-          {
-            "type": "string",
-            "name": "project_manager",
-            "in": "formData",
-            "required": false
-          },
-          {
-            "type": "string",
-            "name": "location",
-            "in": "formData",
-            "required": false
-          },
-          {
-            "type": "string",
-            "name": "description",
-            "in": "formData"
-          },
-          {
-            "type": "string",
-            "name": "financial_institutions",
-            "in": "formData"
-          }
-        ],
+
         "consumes": ["multipart/form-data"],
         "tags": ["Projects"],
         "responses": {
@@ -354,23 +235,7 @@
       "get": {
         "summary": "List all users",
         "operationId": "getApiV1Users",
-        "parameters": [
-          {
-            "type": "string",
-            "name": "name",
-            "in": "query"
-          },
-          {
-            "type": "number",
-            "name": "start",
-            "in": "query"
-          },
-          {
-            "type": "number",
-            "name": "limit",
-            "in": "query"
-          }
-        ],
+
         "tags": ["Users"],
         "responses": {
           "default": {
@@ -384,15 +249,7 @@
       "post": {
         "summary": "Add a new user",
         "operationId": "postApiV1Users",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model2"
-            }
-          }
-        ],
+
         "tags": ["Users"],
         "responses": {
           "default": {
@@ -408,43 +265,7 @@
       "get": {
         "summary": "List all vendors.",
         "operationId": "getApiV1Vendors",
-        "parameters": [
-          {
-            "type": "number",
-            "name": "start",
-            "in": "query"
-          },
-          {
-            "type": "number",
-            "name": "limit",
-            "in": "query"
-          },
-          {
-            "type": "string",
-            "name": "name",
-            "in": "query"
-          },
-          {
-            "type": "string",
-            "name": "phone",
-            "in": "query"
-          },
-          {
-            "type": "string",
-            "name": "projectId",
-            "in": "query"
-          },
-          {
-            "type": "string",
-            "name": "status",
-            "in": "query"
-          },
-          {
-            "type": "boolean",
-            "name": "show_archive",
-            "in": "query"
-          }
-        ],
+
         "tags": ["Vendors"],
         "responses": {
           "default": {
@@ -458,15 +279,7 @@
       "post": {
         "summary": "Add a vendor.",
         "operationId": "postApiV1Vendors",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Vendor"
-            }
-          }
-        ],
+
         "tags": ["Vendors"],
         "responses": {
           "default": {
@@ -482,15 +295,7 @@
       "get": {
         "summary": "Get an agency by id.",
         "operationId": "getApiV1AgencyId",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Id of the agency",
-            "name": "id",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["Agency"],
         "responses": {
           "default": {
@@ -504,22 +309,7 @@
       "put": {
         "summary": "Update the agency information",
         "operationId": "putApiV1AgencyId",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Id of the agency",
-            "name": "id",
-            "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Agency"
-            }
-          }
-        ],
+
         "tags": ["Agency"],
         "responses": {
           "default": {
@@ -565,15 +355,7 @@
       "get": {
         "summary": "Get an beneficiary by Phone , Wallet Adress or id.",
         "operationId": "getApiV1BeneficiariesId",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["Beneficiaries"],
         "responses": {
           "default": {
@@ -587,15 +369,7 @@
       "delete": {
         "summary": "Remove and archive a beneficiary,",
         "operationId": "deleteApiV1BeneficiariesId",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["Beneficiaries"],
         "responses": {
           "default": {
@@ -609,22 +383,7 @@
       "put": {
         "summary": "Update beneficiary details.",
         "operationId": "putApiV1BeneficiariesId",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Beneficiary"
-            }
-          }
-        ],
+
         "tags": ["Beneficiaries"],
         "responses": {
           "default": {
@@ -640,15 +399,7 @@
       "get": {
         "summary": "Get a financial institutions by Id",
         "operationId": "getApiV1InstitutionsId",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["Institutions"],
         "responses": {
           "default": {
@@ -662,15 +413,7 @@
       "delete": {
         "summary": "Remove and archive a financial institutions",
         "operationId": "deleteApiV1InstitutionsId",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["Institutions"],
         "responses": {
           "default": {
@@ -684,22 +427,7 @@
       "put": {
         "summary": "Update financial institutions details",
         "operationId": "putApiV1InstitutionsId",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model9"
-            }
-          }
-        ],
+
         "tags": ["Institutions"],
         "responses": {
           "default": {
@@ -715,14 +443,7 @@
       "get": {
         "summary": "Get an MOBILIZER by Wallet Adress or id.",
         "operationId": "getApiV1MobilizersId",
-        "parameters": [
-          {
-            "type": "string",
-            "name": "id",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["Mobilizers"],
         "responses": {
           "default": {
@@ -736,15 +457,7 @@
       "delete": {
         "summary": "Remove and archive a MOBILIZER,",
         "operationId": "deleteApiV1MobilizersId",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["Mobilizers"],
         "responses": {
           "default": {
@@ -758,22 +471,7 @@
       "put": {
         "summary": "Update MOBILIZER details.",
         "operationId": "putApiV1MobilizersId",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model10"
-            }
-          }
-        ],
+
         "tags": ["Mobilizers"],
         "responses": {
           "default": {
@@ -789,15 +487,7 @@
       "get": {
         "summary": "Get a project by Id",
         "operationId": "getApiV1ProjectsId",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["Projects"],
         "responses": {
           "default": {
@@ -811,15 +501,7 @@
       "delete": {
         "summary": "Remove and archive a project",
         "operationId": "deleteApiV1ProjectsId",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["Projects"],
         "responses": {
           "default": {
@@ -833,22 +515,7 @@
       "put": {
         "summary": "Update project details",
         "operationId": "putApiV1ProjectsId",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Project"
-            }
-          }
-        ],
+
         "tags": ["Projects"],
         "responses": {
           "default": {
@@ -864,14 +531,7 @@
       "get": {
         "summary": "Get a role by id",
         "operationId": "getApiV1RolesId",
-        "parameters": [
-          {
-            "type": "string",
-            "name": "id",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["Roles"],
         "responses": {
           "default": {
@@ -915,14 +575,7 @@
       "get": {
         "summary": "List all transactions.",
         "operationId": "getApiV1TransactionsTo",
-        "parameters": [
-          {
-            "type": "string",
-            "name": "to",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["Transactions"],
         "responses": {
           "default": {
@@ -953,15 +606,7 @@
       "get": {
         "summary": "Find a user by id",
         "operationId": "getApiV1UsersId",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["Users"],
         "responses": {
           "default": {
@@ -975,22 +620,7 @@
       "post": {
         "summary": "Update user data",
         "operationId": "postApiV1UsersId",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model6"
-            }
-          }
-        ],
+
         "tags": ["Users"],
         "responses": {
           "default": {
@@ -1006,14 +636,7 @@
       "get": {
         "summary": "Get an vendor by Wallet Adress or id.",
         "operationId": "getApiV1VendorsId",
-        "parameters": [
-          {
-            "type": "string",
-            "name": "id",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["Vendors"],
         "responses": {
           "default": {
@@ -1027,15 +650,7 @@
       "delete": {
         "summary": "Remove and archive a Vendor,",
         "operationId": "deleteApiV1VendorsId",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["Vendors"],
         "responses": {
           "default": {
@@ -1049,22 +664,7 @@
       "put": {
         "summary": "Update vendor details.",
         "operationId": "putApiV1VendorsId",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Vendor"
-            }
-          }
-        ],
+
         "tags": ["Vendors"],
         "responses": {
           "default": {
@@ -1080,14 +680,7 @@
       "get": {
         "summary": "Get a contracts artifacts",
         "operationId": "getApiV1AppContractsContractname",
-        "parameters": [
-          {
-            "type": "string",
-            "name": "contractName",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["App"],
         "responses": {
           "default": {
@@ -1133,15 +726,7 @@
       "get": {
         "summary": "List token distributions to beneficiary",
         "operationId": "getApiV1BeneficiariesIdToken",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["Beneficiaries"],
         "responses": {
           "default": {
@@ -1155,22 +740,7 @@
       "post": {
         "summary": "Distribute token to beneficiary",
         "operationId": "postApiV1BeneficiariesIdToken",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/TokenDistribution"
-            }
-          }
-        ],
+
         "tags": ["Beneficiaries"],
         "responses": {
           "default": {
@@ -1186,14 +756,7 @@
       "get": {
         "summary": "Get the token transactions by current MOBILIZER",
         "operationId": "getApiV1MobilizersIdTransactions",
-        "parameters": [
-          {
-            "type": "string",
-            "name": "id",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["Mobilizers"],
         "responses": {
           "default": {
@@ -1224,15 +787,7 @@
       "get": {
         "summary": "List beneficiaries registered to the project",
         "operationId": "getApiV1ProjectsIdBeneficiaries",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["Projects"],
         "responses": {
           "default": {
@@ -1246,22 +801,7 @@
       "post": {
         "summary": "Add beneficiary to the project",
         "operationId": "postApiV1ProjectsIdBeneficiaries",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model8"
-            }
-          }
-        ],
+
         "tags": ["Projects"],
         "responses": {
           "default": {
@@ -1307,14 +847,7 @@
       "get": {
         "summary": "Get the token transactions by current vendor",
         "operationId": "getApiV1VendorsIdTransactions",
-        "parameters": [
-          {
-            "type": "string",
-            "name": "id",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["Vendors"],
         "responses": {
           "default": {
@@ -1330,14 +863,7 @@
       "get": {
         "summary": "Get a contracts bytecode",
         "operationId": "getApiV1AppContractsContractnameBytecode",
-        "parameters": [
-          {
-            "type": "string",
-            "name": "contractName",
-            "in": "path",
-            "required": true
-          }
-        ],
+
         "tags": ["App"],
         "responses": {
           "default": {
@@ -1353,15 +879,7 @@
       "post": {
         "summary": "Add a new transaction.",
         "operationId": "postApiV1Transactions",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model1"
-            }
-          }
-        ],
+
         "tags": ["Transactions"],
         "responses": {
           "default": {
@@ -1377,15 +895,7 @@
       "post": {
         "summary": "Setup a new server for the first time",
         "operationId": "postApiV1AppSetup",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/AppSetup"
-            }
-          }
-        ],
+
         "tags": ["App"],
         "responses": {
           "default": {
@@ -1416,15 +926,7 @@
       "post": {
         "summary": "register a MOBILIZER.",
         "operationId": "postApiV1MobilizersRegister",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model3"
-            }
-          }
-        ],
+
         "tags": ["Mobilizers"],
         "responses": {
           "default": {
@@ -1455,15 +957,7 @@
       "post": {
         "summary": "Check If user Exists",
         "operationId": "postApiV1UsersCheck",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model4"
-            }
-          }
-        ],
+
         "tags": ["Users"],
         "responses": {
           "default": {
@@ -1479,15 +973,7 @@
       "post": {
         "summary": "Register a new user",
         "operationId": "postApiV1UsersRegister",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model5"
-            }
-          }
-        ],
+
         "tags": ["Users"],
         "responses": {
           "default": {
@@ -1503,15 +989,7 @@
       "post": {
         "summary": "register a vendor.",
         "operationId": "postApiV1VendorsRegister",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model7"
-            }
-          }
-        ],
+
         "tags": ["Vendors"],
         "responses": {
           "default": {
@@ -1555,21 +1033,7 @@
       "patch": {
         "summary": "Add permissions to a role",
         "operationId": "patchApiV1RolesIdPermissions",
-        "parameters": [
-          {
-            "type": "string",
-            "name": "id",
-            "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model18"
-            }
-          }
-        ],
+
         "tags": ["Roles"],
         "responses": {
           "default": {
@@ -1598,22 +1062,7 @@
       "patch": {
         "summary": "Add roles to a user",
         "operationId": "patchApiV1UsersIdRoles",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model19"
-            }
-          }
-        ],
+
         "tags": ["Users"],
         "responses": {
           "default": {
@@ -1629,15 +1078,7 @@
       "patch": {
         "summary": "Approves MOBILIZER to interact with projects of this agency",
         "operationId": "patchApiV1MobilizersApprove",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model11"
-            }
-          }
-        ],
+
         "tags": ["Mobilizers"],
         "responses": {
           "default": {
@@ -1653,15 +1094,7 @@
       "patch": {
         "summary": "Approves vendor to interact with projects of this agency",
         "operationId": "patchApiV1VendorsApprove",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model12"
-            }
-          }
-        ],
+
         "tags": ["Vendors"],
         "responses": {
           "default": {
@@ -1677,22 +1110,7 @@
       "patch": {
         "summary": "Update contract addresses controlled by the agency",
         "operationId": "patchApiV1AgencyIdContracts",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Id of the agency",
-            "name": "id",
-            "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model13"
-            }
-          }
-        ],
+
         "tags": ["Agency"],
         "responses": {
           "default": {
@@ -1708,22 +1126,7 @@
       "patch": {
         "summary": "Update financial institutions status",
         "operationId": "patchApiV1InstitutionsIdStatus",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model14"
-            }
-          }
-        ],
+
         "tags": ["Institutions"],
         "responses": {
           "default": {
@@ -1739,21 +1142,7 @@
       "patch": {
         "summary": "Change Vendors Status",
         "operationId": "patchApiV1MobilizersIdStatus",
-        "parameters": [
-          {
-            "type": "string",
-            "name": "id",
-            "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model15"
-            }
-          }
-        ],
+
         "tags": ["Mobilizers"],
         "responses": {
           "default": {
@@ -1769,22 +1158,7 @@
       "patch": {
         "summary": "Update project status",
         "operationId": "patchApiV1ProjectsIdStatus",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model16"
-            }
-          }
-        ],
+
         "tags": ["Projects"],
         "responses": {
           "default": {
@@ -1800,22 +1174,7 @@
       "patch": {
         "summary": "Add token allocation to the project",
         "operationId": "patchApiV1ProjectsIdToken",
-        "parameters": [
-          {
-            "type": "string",
-            "description": "Resource identifier",
-            "name": "id",
-            "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model17"
-            }
-          }
-        ],
+
         "tags": ["Projects"],
         "responses": {
           "default": {
@@ -1846,21 +1205,7 @@
       "patch": {
         "summary": "Change Vendors Status",
         "operationId": "patchApiV1VendorsIdStatus",
-        "parameters": [
-          {
-            "type": "string",
-            "name": "id",
-            "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model15"
-            }
-          }
-        ],
+
         "tags": ["Vendors"],
         "responses": {
           "default": {
