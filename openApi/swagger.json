@@ -285,64 +285,7 @@
         "tags": ["projects"],
         "summary": "Add new project",
         "operationId": "postApiV1Projects",
-        "parameters": [
-          {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Name of project",
-            "name": "name",
-            "in": "formData",
-            "required": true
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "name": "file",
-            "in": "formData"
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "format": "date",
-            "description": "End date of project",
-            "name": "end_date",
-            "in": "formData",
-            "required": false
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "name": "project_manager",
-            "in": "formData",
-            "required": false
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "name": "location",
-            "in": "formData",
-            "required": false
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "name": "description",
-            "in": "formData"
-          },
-          {
-            "schema": {
-              "type": "string"
-            },
-            "name": "financial_institutions",
-            "in": "formData"
-          }
-        ],
+
         "consumes": ["multipart/form-data"],
         "responses": {
           "default": {
