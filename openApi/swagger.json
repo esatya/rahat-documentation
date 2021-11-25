@@ -97,22 +97,23 @@
         "tags": ["beneficiaries"],
         "summary": "Add a beneficiary.",
         "operationId": "postApiV1Beneficiaries",
-        "requestBody": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Beneficiary"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Beneficiary" }
             }
           }
-        ],
+        },
         "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
-          }
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Beneficiary" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
@@ -134,22 +135,23 @@
         "tags": ["institutions"],
         "summary": "Add a financial institutions",
         "operationId": "postApiV1Institutions",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Institution"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Institution" }
             }
           }
-        ],
+        },
         "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
-          }
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Institution" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
@@ -203,22 +205,23 @@
         "tags": ["mobilizers"],
         "summary": "Add a MOBILIZER.",
         "operationId": "postApiV1Mobilizers",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Mobilizer"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Mobilizer" }
             }
           }
-        ],
+        },
         "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
-          }
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Mobilizer" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
