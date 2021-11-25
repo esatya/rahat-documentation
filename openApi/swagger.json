@@ -549,27 +549,32 @@
         "operationId": "putApiV1AgencyId",
         "parameters": [
           {
-            "type": "string",
-            "description": "Id of the agency",
             "name": "id",
             "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
+            "description": "Id of the agency",
+            "required": true,
             "schema": {
-              "$ref": "#/definitions/Agency"
+              "type": "string"
             }
           }
         ],
-        "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Agency" }
+            }
           }
+        },
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Agency" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
@@ -1758,27 +1763,32 @@
         "operationId": "patchApiV1AgencyIdContracts",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Id of the agency",
             "name": "id",
             "in": "path",
             "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model13"
-            }
           }
         ],
-        "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Model13" }
+            }
           }
+        },
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Model13" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
