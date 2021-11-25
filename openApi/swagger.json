@@ -244,22 +244,30 @@
         "operationId": "getApiV1Projects",
         "parameters": [
           {
-            "type": "number",
+            "schema": {
+              "type": "number"
+            },
             "name": "start",
             "in": "query"
           },
           {
-            "type": "number",
+            "schema": {
+              "type": "number"
+            },
             "name": "limit",
             "in": "query"
           },
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "name",
             "in": "query"
           },
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "status",
             "in": "query"
           }
@@ -367,17 +375,23 @@
         "operationId": "getApiV1Users",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "name",
             "in": "query"
           },
           {
-            "type": "number",
+            "schema": {
+              "type": "number"
+            },
             "name": "start",
             "in": "query"
           },
           {
-            "type": "number",
+            "schema": {
+              "type": "number"
+            },
             "name": "limit",
             "in": "query"
           }
@@ -422,37 +436,51 @@
         "operationId": "getApiV1Vendors",
         "parameters": [
           {
-            "type": "number",
+            "schema": {
+              "type": "number"
+            },
             "name": "start",
             "in": "query"
           },
           {
-            "type": "number",
+            "schema": {
+              "type": "number"
+            },
             "name": "limit",
             "in": "query"
           },
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "name",
             "in": "query"
           },
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "phone",
             "in": "query"
           },
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "projectId",
             "in": "query"
           },
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "status",
             "in": "query"
           },
           {
-            "type": "boolean",
+            "schema": {
+              "type": "boolean"
+            },
             "name": "show_archive",
             "in": "query"
           }
@@ -582,7 +610,9 @@
         "operationId": "getApiV1BeneficiariesId",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Resource identifier",
             "name": "id",
             "in": "path",
@@ -657,7 +687,9 @@
         "operationId": "getApiV1InstitutionsId",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Resource identifier",
             "name": "id",
             "in": "path",
