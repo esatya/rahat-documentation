@@ -1081,27 +1081,32 @@
         "operationId": "postApiV1UsersId",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Resource identifier",
             "name": "id",
             "in": "path",
             "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model6"
-            }
           }
         ],
-        "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Model6" }
+            }
           }
+        },
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Model6" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
@@ -1740,27 +1745,32 @@
         "operationId": "patchApiV1UsersIdRoles",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Resource identifier",
             "name": "id",
             "in": "path",
             "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model19"
-            }
           }
         ],
-        "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Model19" }
+            }
           }
+        },
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Model19" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
