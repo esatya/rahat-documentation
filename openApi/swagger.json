@@ -806,7 +806,9 @@
         "operationId": "deleteApiV1MobilizersId",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Resource identifier",
             "name": "id",
             "in": "path",
@@ -828,27 +830,32 @@
         "operationId": "putApiV1MobilizersId",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Resource identifier",
             "name": "id",
             "in": "path",
             "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model10"
-            }
           }
         ],
-        "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Model10" }
+            }
           }
+        },
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Model10" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
@@ -1855,26 +1862,31 @@
         "operationId": "patchApiV1MobilizersIdStatus",
         "parameters": [
           {
-            "type": "string",
-            "name": "id",
-            "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model15"
-            }
-          }
-        ],
-        "responses": {
-          "default": {
             "schema": {
               "type": "string"
             },
-            "description": "Successful"
+            "name": "id",
+            "in": "path",
+            "required": true
           }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Model15" }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Model15" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
@@ -1962,26 +1974,31 @@
         "operationId": "patchApiV1VendorsIdStatus",
         "parameters": [
           {
-            "type": "string",
-            "name": "id",
-            "in": "path",
-            "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model15"
-            }
-          }
-        ],
-        "responses": {
-          "default": {
             "schema": {
               "type": "string"
             },
-            "description": "Successful"
+            "name": "id",
+            "in": "path",
+            "required": true
           }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Model15" }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Model15" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     }
