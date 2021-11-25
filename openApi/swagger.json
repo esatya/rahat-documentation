@@ -162,32 +162,44 @@
         "operationId": "getApiV1Mobilizers",
         "parameters": [
           {
-            "type": "number",
+            "schema": {
+              "type": "number"
+            },
             "name": "start",
             "in": "query"
           },
           {
-            "type": "number",
+            "schema": {
+              "type": "number"
+            },
             "name": "limit",
             "in": "query"
           },
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "name",
             "in": "query"
           },
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "projectId",
             "in": "query"
           },
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "status",
             "in": "query"
           },
           {
-            "type": "boolean",
+            "schema": {
+              "type": "boolean"
+            },
             "name": "show_archive",
             "in": "query"
           }
