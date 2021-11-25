@@ -764,7 +764,9 @@
         "operationId": "getApiV1MobilizersId",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "id",
             "in": "path",
             "required": true
@@ -838,7 +840,9 @@
         "operationId": "getApiV1ProjectsId",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Resource identifier",
             "name": "id",
             "in": "path",
@@ -913,7 +917,9 @@
         "operationId": "getApiV1RolesId",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "id",
             "in": "path",
             "required": true
@@ -964,7 +970,9 @@
         "operationId": "getApiV1TransactionsTo",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "to",
             "in": "path",
             "required": true
@@ -1002,7 +1010,9 @@
         "operationId": "getApiV1UsersId",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Resource identifier",
             "name": "id",
             "in": "path",
@@ -1055,7 +1065,9 @@
         "operationId": "getApiV1VendorsId",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "id",
             "in": "path",
             "required": true
@@ -1129,7 +1141,9 @@
         "operationId": "getApiV1AppContractsContractname",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "contractName",
             "in": "path",
             "required": true
@@ -1182,7 +1196,9 @@
         "operationId": "getApiV1BeneficiariesIdToken",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Resource identifier",
             "name": "id",
             "in": "path",
@@ -1235,7 +1251,9 @@
         "operationId": "getApiV1MobilizersIdTransactions",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "id",
             "in": "path",
             "required": true
@@ -1273,7 +1291,9 @@
         "operationId": "getApiV1ProjectsIdBeneficiaries",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Resource identifier",
             "name": "id",
             "in": "path",
@@ -1356,7 +1376,9 @@
         "operationId": "getApiV1VendorsIdTransactions",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "id",
             "in": "path",
             "required": true
@@ -1379,7 +1401,9 @@
         "operationId": "getApiV1AppContractsContractnameBytecode",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "contractName",
             "in": "path",
             "required": true
