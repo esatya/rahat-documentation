@@ -723,7 +723,9 @@
         "operationId": "deleteApiV1InstitutionsId",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Resource identifier",
             "name": "id",
             "in": "path",
@@ -745,27 +747,32 @@
         "operationId": "putApiV1InstitutionsId",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Resource identifier",
             "name": "id",
             "in": "path",
             "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model9"
-            }
           }
         ],
-        "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Model9" }
+            }
           }
+        },
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Model9" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
@@ -1812,27 +1819,32 @@
         "operationId": "patchApiV1InstitutionsIdStatus",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Resource identifier",
             "name": "id",
             "in": "path",
             "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model14"
-            }
           }
         ],
-        "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Model14" }
+            }
           }
+        },
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Model14" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
