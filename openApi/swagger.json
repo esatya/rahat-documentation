@@ -1416,24 +1416,25 @@
     "/mobilizers/register": {
       "post": {
         "tags": ["mobilizers"],
-        "summary": "register a MOBILIZER.",
+        "summary": "Register a MOBILIZER.",
         "operationId": "postApiV1MobilizersRegister",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model3"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Model3" }
             }
           }
-        ],
+        },
         "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
-          }
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Model3" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
@@ -1457,22 +1458,23 @@
         "tags": ["users"],
         "summary": "Check If user Exists",
         "operationId": "postApiV1UsersCheck",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model4"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Model4" }
             }
           }
-        ],
+        },
         "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
-          }
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Model4" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
@@ -1481,46 +1483,49 @@
         "tags": ["users"],
         "summary": "Register a new user",
         "operationId": "postApiV1UsersRegister",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model5"
+
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Model5" }
             }
           }
-        ],
+        },
         "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
-          }
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Model5" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
     "/vendors/register": {
       "post": {
         "tags": ["vendors"],
-        "summary": "register a vendor.",
+        "summary": "Register a vendor.",
         "operationId": "postApiV1VendorsRegister",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model7"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Model7" }
             }
           }
-        ],
+        },
         "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
-          }
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Model7" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
@@ -1631,22 +1636,23 @@
         "tags": ["mobilizers"],
         "summary": "Approves MOBILIZER to interact with projects of this agency",
         "operationId": "patchApiV1MobilizersApprove",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model11"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Model11" }
             }
           }
-        ],
+        },
         "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
-          }
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Model11" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
@@ -1655,22 +1661,23 @@
         "tags": ["vendors"],
         "summary": "Approves vendor to interact with projects of this agency",
         "operationId": "patchApiV1VendorsApprove",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model12"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Model12" }
             }
           }
-        ],
+        },
         "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
-          }
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Model12" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
