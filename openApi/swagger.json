@@ -287,19 +287,25 @@
         "operationId": "postApiV1Projects",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Name of project",
             "name": "name",
             "in": "formData",
             "required": true
           },
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "file",
             "in": "formData"
           },
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "format": "date",
             "description": "End date of project",
             "name": "end_date",
@@ -307,24 +313,32 @@
             "required": false
           },
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "project_manager",
             "in": "formData",
             "required": false
           },
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "location",
             "in": "formData",
             "required": false
           },
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "description",
             "in": "formData"
           },
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "name": "financial_institutions",
             "in": "formData"
           }
@@ -890,7 +904,9 @@
         "operationId": "deleteApiV1ProjectsId",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Resource identifier",
             "name": "id",
             "in": "path",
@@ -912,27 +928,32 @@
         "operationId": "putApiV1ProjectsId",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Resource identifier",
             "name": "id",
             "in": "path",
             "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Project"
-            }
           }
         ],
-        "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Project" }
+            }
           }
+        },
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Project" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
@@ -1346,27 +1367,32 @@
         "operationId": "postApiV1ProjectsIdBeneficiaries",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Resource identifier",
             "name": "id",
             "in": "path",
             "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model8"
-            }
           }
         ],
-        "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Model8" }
+            }
           }
+        },
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Model8" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
@@ -1897,27 +1923,32 @@
         "operationId": "patchApiV1ProjectsIdStatus",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Resource identifier",
             "name": "id",
             "in": "path",
             "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model16"
-            }
           }
         ],
-        "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Model16" }
+            }
           }
+        },
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Model16" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
@@ -1928,27 +1959,32 @@
         "operationId": "patchApiV1ProjectsIdToken",
         "parameters": [
           {
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "Resource identifier",
             "name": "id",
             "in": "path",
             "required": true
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/Model17"
-            }
           }
         ],
-        "responses": {
-          "default": {
-            "schema": {
-              "type": "string"
-            },
-            "description": "Successful"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/definitions/Model17" }
+            }
           }
+        },
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/definitions/Model17" }
+              }
+            }
+          },
+          "405": { "description": "Invalid input" }
         }
       }
     },
