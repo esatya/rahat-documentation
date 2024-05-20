@@ -35,4 +35,5 @@ jobs:
         with:
           context: .
           file: Dockerfile.test
+          push: true
           tags: rumsan/test:latest
