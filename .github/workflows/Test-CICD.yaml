@@ -15,6 +15,7 @@ jobs:
       - name: import env file
         run: |
           touch ./.env && echo "$env_deploy" >> ./.env && \
+          ls 
           
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
