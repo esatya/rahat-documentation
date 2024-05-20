@@ -1,0 +1,4 @@
+FROM bash
+WORKDIR /app
+COPY .env ./
+CMD [ls""]
