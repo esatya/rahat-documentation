@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: import env file
         run: |
           touch ./.env && echo "$env_deploy" >> ./.env && \
